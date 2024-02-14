@@ -1,13 +1,101 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+main {
+  min-height: 80vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.rating span {
+  margin: 0.1rem;
+}
+
+.rating svg {
+  color: #f8e825;
+}
+
+.rating-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding-left: 0.5rem;
+}
+.product a{
+  color: #000;
+}
+.product-title {
+  height: 2.5em; /* Set a fixed height */
+  overflow: hidden; /* Hide overflow content */
+  text-overflow: ellipsis; /* Add ellipsis for long text */
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+table td,
+table th {
+  text-align: center;
+}
+
+.review {
+  margin-top: 30px;
+}
+
+.review h2 {
+  font-size: 24px;
+  background: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.review button {
+  margin-top: 10px;
+}
+
+.carousel-caption {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.product-image{
+  height: 200px;
+}
+.product-image-carousel{
+  height: 400px;
+}
+.categories-nav{
+  background-color: #f2f2f2;
+}
+.nav-categories{
+  flex: 2;
+}
+.categories-links {
+  list-style-type: none; 
+  padding: 0; 
+}
+
+.categories-link {
+  border-bottom: 1px solid #ccc; 
+  padding: 5px 0;
+}
+
+.categories-link div {
+  cursor: pointer; 
+  text-decoration: none; 
+  color: #333333;
+  transition: 05 ease-in-out;
+}
+.categories-link div:hover {
+  color: #004085; 
+}
+
+.categories-link ul {
+  list-style-type: none; 
+}
+@media (min-width:768px) {
+  .app-container {
+  display: flex;
+}
+
+}
+.quantity-controls{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
